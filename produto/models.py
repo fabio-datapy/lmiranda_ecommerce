@@ -25,9 +25,9 @@ class Produto(models.Model):
     )
 
     @staticmethod
-    def resize_image(img, new_width=800)
+    def resize_image(img, new_width=800):
         img_full_path = os.path.join(settings.MEDIA_ROOT, img.name)
-        img_pil = Image.open(imag_full_path)
+        img_pil = Image.open(img_full_path)
         original_width, original_height = img_pil.size
 
         if original_width <= new_width:

@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-
+    "perfil.apps.PerfilConfig",
     "produto.apps.ProdutoConfig",
+    "pedido.apps.PedidoConfig",
+
     "debug_toolbar",
 
     
